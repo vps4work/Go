@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var defined = {
+            "test": "https://c-network.to/"
+        };
+        var code = new URLSearchParams(window.location.search).get('c');
+        if (code && defined[code]) {
+            window.location.replace(defined[code]);
+        }
+    </script>
+</head>
+<body>Redirecting...</body>
+</html>
